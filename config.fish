@@ -549,4 +549,7 @@ alias rm='rm -i'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias ln='ln -iv'
-fish_vi_key_bindings
+bind \ch history-pager
+bind \ck history-search-backward
+bind \cj history-search-forward
+set -x WAYLAND_DISPLAY ""
