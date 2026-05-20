@@ -68,7 +68,7 @@ alias ls='ls -CF --color=auto'
 # ============================================================
 alias cls='clear'
 alias upd='sudo apt update && sudo apt upgrade -y'
-alias exp='nautilus .'
+alias exp='dolphin .'
 alias src='source'
 alias scr='flameshot gui'
 alias sht='sudo systemctl poweroff'
@@ -593,3 +593,7 @@ bind \ee __fish_edit_cmd_overlay
 set -x WAYLAND_DISPLAY ""
 set -x EDITOR nvim
 set -x VISUAL vi
+bind \cf history-pager
+bind --mode insert \cf history-pager
+bind --erase \ch
+pyenv init - | source
