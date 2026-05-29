@@ -597,3 +597,4 @@ bind \cf history-pager
 bind --mode insert \cf history-pager
 bind --erase \ch
 pyenv init - | source
+alias y="yazi"
