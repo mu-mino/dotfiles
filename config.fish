@@ -97,7 +97,7 @@ alias nv='nvim'
 alias brc='nvim ~/.config/fish/config.fish'
 alias srcrc='source ~/.config/fish/config.fish'
 alias c='code .'
-alias mark='~/Downloads/marktext-x86_64.AppImage --disable-gpu --no-sandbox'
+alias mark='/home/muhammed-emin-eser/.local/bin/marktext-x86_64.AppImage --disable-gpu --no-sandbox'
 
 # ============================================================
 # GREP / RIPGREP
@@ -592,9 +592,57 @@ bind -e \ee
 bind \ee __fish_edit_cmd_overlay
 set -x WAYLAND_DISPLAY ""
 set -x EDITOR nvim
-set -x VISUAL vi
+set -x VISUAL nvim
 bind \cf history-pager
 bind --mode insert \cf history-pager
 bind --erase \ch
 pyenv init - | source
 alias y="yazi"
+alias o='open'
+set -gx PATH $HOME/ai/llama.cpp/build/bin $PATH
+set -gx PATH /opt/rocm/bin $PATH
+function ggrep
+    git grep -I $argv (git rev-list --all) -- ':(exclude).*'
+end
+alias his='history'
+alias hish='history | head -15'
+# Automatische Jupyter-Kernel-Registrierung für das aktuelle venv
+function jupyter-register-venv
+    # 1. Prüfen, ob überhaupt ein venv aktiv ist
+    if not set -q VIRTUAL_ENV
+        echo (set_color red)"❌ Fehler: Kein virtuelles Environment (venv) aktiv!"
+        echo (set_color yellow)"Bitte zuerst 'source .venv/bin/activate.fish' ausführen."
+        return 1
+    end
+
+    # 2. Den Namen des aktuellen Ordners als Kernel-Namen vorschlagen
+    set -l current_folder (basename (pwd))
+
+    echo (set_color cyan)"📦 Aktives venv erkannt:" $VIRTUAL_ENV
+    echo "⚙️ Installiere ipykernel im venv..."
+
+    # 3. Sicherstellen, dass ipykernel im venv installiert ist
+    pip install ipykernel -q
+
+    if test $status -ne 0
+        echo (set_color red)"❌ Fehler beim Installieren von ipykernel."
+        return 1
+    end
+
+    echo "🚀 Registriere Kernel als 'Python ($current_folder)'..."
+
+    # 4. Den Kernel vollautomatisch mit dem Ordnernamen registrieren
+    python -m ipykernel install --user --name=$current_folder --display-name "Python ($current_folder)"
+
+    if test $status -eq 0
+        echo (set_color green)"✅ Erfolg! Der Kernel 'Python ($current_folder)' ist jetzt in Jupyter/Jupynium verfügbar."
+    else
+        echo (set_color red)"❌ Fehler bei der Kernel-Registrierung."
+    end
+end
+
+# Kurzer Alias, um die Funktion blitzschnell aufzurufen
+alias jkv="jupyter-register-venv"
+
+# opencode
+fish_add_path /home/muhammed-emin-eser/.opencode/bin

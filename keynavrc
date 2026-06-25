@@ -1,17 +1,29 @@
+clear
+
+# Startet das Gitter (18x18) mit visuellen Labels auf dem aktiven Monitor
 F1 start,grid-nav on,grid 18x18
+
 Escape end
 ctrl+bracketleft end
 q record ~/.keynav_macros
 shift+at playback
 a history-back
+
+# Navigation (Cuts)
 h cut-left
 j cut-down
 k cut-up
 l cut-right
-shift+h move-left
-shift+j move-down
-shift+k move-up
-shift+l move-right
+
+# Monitor-Wechsel: Falls das Gitter auf dem falschen Bildschirm erscheint,
+# drücke Shift+L oder Shift+H, um das Gitter auf den anderen Monitor zu schieben!
+shift+h move-left 1
+shift+j move-down 1
+shift+k move-up 1
+shift+l move-right 1
+
+# Klick-Befehle: Erst die 2 Buchstaben des Gitters tippen, 
+# dann SOFORT Return oder u drücken für den Klick.
 u warp,click 1,end
 Return warp,click 1,end
 semicolon warp,end
