@@ -1,0 +1,2 @@
+ f"Kein Match für '{arabic_word}' (bestes: {best_score:.2f}, Schwelle: {WORD_MATCH_TOLERANCE})" str = "Kein Match für 'قد' (bestes: 0.25, Schwelle: 0.5)"
+

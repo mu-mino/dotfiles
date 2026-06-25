@@ -1,0 +1,1 @@
+/home/llama.cpp/build/bin/llama-cli -m /workspace/models/qwen2.5-14b-instruct-q4_k_m.gguf -ngl 99 --prompt "hallo"

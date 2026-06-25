@@ -1,0 +1,8 @@
+gr_interface = gr.Interface(fn=greet, inputs="text", outputs="text")
+
+# Step 3: Mount the Gradio app to the Flask app
+gr.mount_gradio_app(app, gr_interface, path="/gradio")
+
+# Step 4: Run the Flask app
+if __name__ == "__main__":
+    app.run(port=5000)

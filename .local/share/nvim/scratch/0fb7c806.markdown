@@ -1,0 +1,143 @@
+kontext:
+i Muhammed,
+
+Thank you for your detailed and thoughtful email — it has been extremely helpful. I am currently working on incorporating your clarifications into the paper, especially regarding the segmentation process and instruction-driven design.
+
+Just to confirm: the corpus was generated using Gemini 3 Pro, correct? My plan is to position it as the best-performing model in the initial phase, and then frame the current study as an evaluation of annotation quality through human reviewers. Conducting a full comparison between multiple models would require generating parallel outputs, which would significantly increase the annotation workload.
+
+Regarding your point about hadith authenticity, I completely understand the concern. As an immediate step, how about adding a note in the annotation interface such as:
+
+“Note: The content reflects original tafsir sources and may include narrations of varying authenticity. No authenticity judgment is implied.”
+
+Do you think this would be sufficient for now?
+
+More broadly, I see the work progressing in two stages. The current phase focuses on constructing the annotated tafsir corpus. In a subsequent phase, we introduce an additional layer that identifies hadith authenticity based on established scholarly classifications (e.g., sources such as al-Albani), rather than attempting to derive authenticity automatically?
+
+On a practical note, I am planning to have two annotators work on the tool, so I would like to make it accessible online rather than running it locally.
+
+I was considering hosting it on Hugging Face Spaces, similar to this example:
+https://huggingface.co/spaces/MarwanBadawi/tts-audio-rating-app
+
+Since I am not very experienced with deployment, I wanted to ask if you would be willing to help set this up, if it is not too much of a burden. My idea is to keep things simple — host the app on Hugging Face and store the annotation results in a Google Sheet, which should be sufficient for a small number of annotators (2–3).
+
+If you have a better suggestion for hosting, I would be very happy to follow your recommendation.
+
+I will be sharing the tool via a link with the annotators, so it needs to be accessible online. 
+
+Best,
+Shatha
+
+
+Muhammed Emin Eser <muhammed.emin.eser.1@gmail.com>
+24.04.2026, 00:32
+an Shatha
+
+Hi Shatha,
+
+sorry for the late reply — I’m currently in a stressful exam period and managing several things.
+
+I’ll be able to properly start working on this once my exams are over. They are quite demanding and will take about two more weeks.
+
+Thanks for your understanding.
+
+Best,
+Muhammed
+
+
+Shatha
+24.04.2026, 11:51
+an mich
+
+Diese Nachricht ist anscheinend auf Englisch
+Thank you, Muhammed, for your reply.
+Please focus on your exams—may Allah grant you success.
+There is no rush on this; I am currently working on other parts of the paper (literature review).
+
+
+Muhammed Emin Eser <muhammed.emin.eser.1@gmail.com>
+09.05.2026, 15:17
+an Shatha
+
+Dear Shatha
+
+thank you for your patience. I now have more capacity to continue working on the project, as only one exam remains.
+
+Regarding the corpus as a finished product: this was never the goal of the project at this stage, and I don't think we are in a position to publish it yet. Classical tafsir works are not intended for lay readers. They are written by scholars for scholars, who recognize narrators by name and correctly interpret statements through their knowledge of context, historical background, reasons of revelation, and related texts. Shaikh Abdullah Al-Bukhari, who holds a leading position at the Islamic University of al-Madinah, consistently warns against reading such sources directly rather than returning to scholarly explanations. The presence of hadiths of varying authenticity is a central reason for this and it is precisely this barrier that the project is meant to address in the long run: making classical texts accessible to those who have not studied the full breadth of hadith sciences. So before publishing anything, the hadith authenticity classification needs to be in place.
+
+Your proposed disclaimer is appropriate for the data we have already shared for verification purposes; this can still be considered part of an internal development phase. For a public release of the full corpus it would not be sufficient though.
+
+As for the corpus status: we have almost reached the full 6,236 entries. The first roughly 1,000 are a mixture of outputs from Gemini Pro, Flash, and Thinking Mode, generated via the GUI during the early prototype phase. The rest were produced using Gemini 3 Pro Preview via the API. At some point Google deprecated version 3 and updated to Gemini 3.1 Pro Preview, so I continued with 3.1 from there.
+
+The main problem I am currently working on is hadith segmentation. While writing a script to find duplicate ahadith in the database, I found that many ahadith in the KSU Hadith Corpus are not properly separated. A number appear to have been cut off, most likely due to the mechanical behavior of the pipeline. I am currently unsure how many cases like this exist and how to reliably identify them. Until this is resolved, I would not consider the corpus ready for any further step. A reference list of these duplicates is available in the repository:https://github.com/mu-mino/Auto-Classify-Hadiths/blob/HASM/ref_duplicates.json.If you are interested, you can check the IDs from the json file in the KSU Hadith corpus CSV files or my SQLite files to verify this and possibly identify the cause and a fix.
+
+Hadith segmentation is a solved problem in principle. Sunnah.com, which you also referenced in the paper, has segmented ahadith. I reached out to request their tool or dataset but got no answer. I am still looking for a properly segmented hadith/isnād dataset, either by requesting access or scraping.
+
+If nothing is available, one option I am considering is training an existing open-source model for this task, using the annotated tafsir filtered to hadith and isnād tags as training data. If you would be willing to share the ML data you referenced in the paper, that would also help. A model specialized in hadith segmentation would be valuable long-term anyway, since the dependency on Gemini 3 Pro with its API costs is not something I want to keep.
+
+The two-phase structure you described aligns with my understanding. The current phase builds the annotated corpus, and the next maps the judgements of Shaikh al-Albani onto the annotated entries.
+
+Happy to help with deployment. Before I start, could you clarify which data you have in mind? Are you referring to the data I have already shared, specific logs such as failed entries, or the full corpus? The latter is not possible at this stage for the reasons mentioned above, but the data already shared is sufficient to start, clearly marked as in progress.
+
+Best regards, Muhammed
+
+
+Shatha
+16.05.2026, 19:37 (vor 8 Tagen)
+an mich
+
+Diese Nachricht ist anscheinend auf Englisch
+Dear Muhammed,
+
+Thank you for your clarification, and I hope your exam results turn out very well.
+
+I understand your concern regarding the sensitivity of classical tafsir material and the importance of avoiding presenting the corpus as something intended for general readers or as an authority on hadith authenticity.
+
+I think we may be viewing the purpose of the project from slightly different angles. From my perspective, the contribution of this work is primarily methodological and computational.
+
+The corpus is intended mainly for NLP tasks and research purposes, not for laymen to read directly. I see it as a language resource that can support Arabic NLP and Islamic NLP research, including information extraction, semantic segmentation, retrieval systems, corpus linguistics, and evaluation/alignment studies for Arabic LLMs.
+
+At the same time, I do believe the corpus itself is an important research contribution and should eventually be published as a research resource after sufficient validation and review. The goal would not be to present it as a religious authority, but rather as a computationally annotated scholarly corpus for research use.
+
+The main novelty is the structured XML annotation pipeline for classical Arabic tafsir using LLMs, including semantic segmentation and tagging of elements such as Quran verses, hadith matn, isnad chains, sources, narrators, rhetorical analysis, fiqh-related content, and other scholarly structures.
+
+I also see the human verification stage as an essential component of the project. The XML tags themselves can be evaluated and refined through annotation guidelines and expert review. This is exactly why I proposed the annotation interface in my previous email.
+
+Regarding the LK hadith corpus comparison, I may be misunderstanding the connection. As mentioned in the paper, the LK corpus itself has an error rate of around 8%, since the segmentation process was automatically applied across the books, while only Sahih al-Bukhari was manually reviewed and corrected. In addition, some hadith contain isnad segments not only at the beginning, but also in the middle or end of the narration. However, the LK segmenter mainly detects isnad chains appearing at the beginning of the hadith. And to answer your question about the training data, the Sahih al-Bukhari  was used as the training data to build the Hadith segmenter that was applied to the other books. 
+
+Also, the link you shared currently gives a 404 error on my side.
+
+In addition, Sunnah.com — which I used while creating the LK hadith corpus — does not always have consistent isnad segmentation. Some segmentations were incorrect or inconsistent, likely because the website content was manually prepared by different contributors. This was one of the motivations behind proposing the hadith segmenter tool in the first place.
+
+I also wanted to ask more specifically: what aspects of the LLM annotation output for isnad and matn do you find problematic? From my perspective, the results actually look fairly decent overall, especially considering the complexity of the material. Of course, this is exactly what we plan to systematically measure during the annotation phase using human annotators and the annotation tool I showed you in my previous email.
+
+Since the current project is based on Tafsir Ibn Kathir rather than the LK corpus, I see this work as a different type of contribution focused on structured tafsir annotation and richer semantic tagging.
+
+I completely agree that we should include clear limitations and disclaimers in the paper and corpus, especially clarifying that the corpus does not make authenticity judgments and may contain narrations with varying scholarly classifications.
+
+As for the research expenses and publication costs, we can also apply for funding from my university. They do provide compensation and financial support for research and publication expenses after the work is published in an ISI-indexed journal. So we can keep record of all expenses (LLM, annotators.. ect) 
+
+I think the project still has strong publication potential as both a methodology paper and a valuable language resource for Arabic and Islamic NLP research, especially given the lack of large-scale structured tafsir corpora.
+
+
+
+For the annotation tool, I think the files you shared earlier should already be sufficient for the annotation phase, especially since they contain most of the XML tag types. I think they are enough for us to start evaluating how well the LLM performs for each tag category, including tags such as isnad, hadith, source attribution, Quran verses, and other semantic structures.
+
+At this stage, we do not necessarily need the complete corpus to begin measuring annotation quality and inter-annotator agreement. The current shared samples should already allow us to test the annotation workflow, evaluate the quality of the XML tagging, and identify which tag categories may need refinement.
+
+Please let me know what you think.
+
+Best,
+
+Shatha
+
+
+
+
+h habe kontext angehängt und möchte diese email nun verfassen, darin sind die kernaspekte in stichpunkten festgehalten:
+0. Thank you for your kind message.
+1. Selbst wenn wir nicht dieselben Ziele verfolgen, bin ich froh, dass wir gemeinsam an diesem Projekt arbeiten und uns gegenseitig unterstützen können
+2. Ich habe mich um Hugging Face gekümmert. Dein Tool ist dort verfügbar. Du kannst es unter https://huggingface.co/spaces/mu-mino/gemini-annotation-rating besuchen und mit der Annotationskontrolle durch menschliche Prüfer beginnen. die dabei ergebnisse in den csv dateien sind in einem persistenten und sicheren privaten hugging face bucket gespeichert auf den aktuell nur ich zugriff habe, du kannst die daten jederzeit einfordern, schreib mir einfach eine mail und ich werde sie dir zukommen lassen.
+3. ich habe außerdem ihr hadith segmentation tool auf meinem github account gehostet und von dort aus bearbeitet und immer amend auf den ersten commit gemacht, damit dort meine erste commit message steht "init: Repo forked from ShathaTm". meine änderungen umfassten lediglich das hinzufügen einer dockerfile für das deployment und die anpassung des ports auf dem der server erreichbar ist, für die kompatibilität mit dem docker server. die lizenz die ich vorübergehend hinzugefügt habe ist die gpl 2.0, falls sie sich eine andere wünscht kann sie das gerne sagen und ich passe es an.
+4. bzg dem hadith segmentation thema :Wie wurden die 92% festgestellt? Beziehungsweise wie sicher und verlässlich ist die Angabe dass nur 8%. Nicht korrekt separated wurden? Ist bekannt welche Einträge von den 8% betroffen sind? Oder gibt es zumindest einen Weg diese zu determinieren und herauszustellen? mir wäre wichtig das alles zu determinieren und tatsächlich finde ich die idee einer spedition (falls das wort hier richtig ist) bei deiner universität zu beantragen sehr gut, da es uns in unserer Forschung und erstellung des zielkorpus start unterstützen kann, zb: um nachträglich die vorhandenen einträge von ki überprüfen zu lassen ODER ki selbst reproduzieren zu lassen und dann die diff mit dem vergangenen dataset zu überprüfen. so können wir einen neuen zweig der forschung starten, indem wir zum einen die grenzen der bisherigen pipeline determinieren und zum anderen die ausgaben der ki mit der einer statischen pipeline vergleichen und daraus schlüsse ziehen in welchen fällen was besser geeignet ist und wo was an seine grenzen stößt und wie diese beiden ansätze sich effektiv ergänzen lassen, dann wäre dieser teil deiner email optimal gelöst und alles gewinnen "at the same time, I do believe the corpus itself is an important research contribution and should eventually be published as a research resource after sufficient validation and review. The goal would not be to present it as a religious authority, but rather as a computationally annotated scholarly corpus for research use.". auch nochmal vielen dank dass du auf deine erfahrungen und research results über sunnah.com eingegangen bist. Mir ist es von höchster wichtigkeit dass das endprodukt akurat und sauber ist, deshalb ist das für mich sehr viel wert um schnell und effizient voranzukommen.
+5. i am sorry for the unklarheit of my email. ich meinte nicht die ausgaben der ki sondern bzgl den ergebnissen aus dem ksu hadith korpus. während der großteil sauber seperated wurde gibt es noch kritische stellen die mir wichtig wären zu lösen (also da wo es nicht korrekt getrennt wurde) um wie in meiner aller ersten email erwähnt die großartige arbeit die darin geleistet wurde zu erweitern und darauf aufzubauen. der link hat einen 404 geworfen weil in der email am ende der uri am ende, das "if" des nächsten satzes mit als link interpretiert wurde :"https://github.com/mu-mino/Auto-Classify-Hadiths/blob/HASM/ref_duplicates.json.If". ansonsten sind die daten vorhanden wie gesagt. und nochmal um genauer zu werden warum es mir so wichtig ist dass das alles akurat ist, ist dass auch wenn es nur 8% sind die voraussichtlich fehler enthalten ( falls es denn wirklich 8% sind und das nachweislich determiniert wurde und nicht basierend auf analyseergenissen ) so sind 8% in einer so gewaltigen menge aus hadithen (kubut sittah) eine große menge und der hadith des propheten ist für mich hoch und heilig und darf in keiner weise fehler oder problematiken enthalten, weshalb ich mein bestes tun will es den 100% näher zu bringen oder sogar erreichen zu lassen.
+

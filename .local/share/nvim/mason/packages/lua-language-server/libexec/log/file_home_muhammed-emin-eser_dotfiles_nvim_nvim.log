@@ -1,0 +1,2391 @@
+[14:48:07.470][info] [#0:/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: Lua Lsp startup, root: 	/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:48:07.470][info] [#0:/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: ROOT:	/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:48:07.470][info] [#0:/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:73]: LOGPATH:	/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[14:48:07.470][info] [#0:/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:74]: METAPATH:	/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[14:48:07.471][info] [#0:/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:75]: VERSION:	3.18.2-dev
+[14:48:07.494][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[14:48:07.494][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.928 MB
+        # 00 : 1.928 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:48:07.498][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit", "command" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = false,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = false,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "command", "data" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = false,
+        foldingRange = {
+          collapsedText = true
+        },
+        lineFoldingOnly = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true,
+        rangesSupport = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      fileOperations = {
+        didRename = true,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.11.2+ga73904168a"
+  },
+  processId = 266504,
+  rootPath = "/home/muhammed-emin-eser/dotfiles/nvim/nvim",
+  rootUri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = "/home/muhammed-emin-eser/dotfiles/nvim/nvim",
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim"
+    } }
+}
+[14:48:07.498][info] [#0:script/language.lua:137]: VSC language: nil
+[14:48:07.498][info] [#0:script/language.lua:138]: LS  language: en-us
+[14:48:07.498][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.498][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/log/file_home_muhammed-emin-eser_dotfiles_nvim_nvim.log
+[14:48:07.498][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.521][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.521][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    workspace = {
+      checkThirdParty = false
+    }
+  }
+}
+[14:48:07.522][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.522][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    workspace = {
+      checkThirdParty = false
+    }
+  }
+}
+[14:48:07.536][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:48:07.536][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[14:48:07.536][info] [#0:script/provider/provider.lua:66]: nil
+[14:48:07.537][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:48:07.537][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[14:48:07.537][info] [#0:script/provider/provider.lua:66]: nil
+[14:48:07.537][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.537][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    codeLens = {
+      enable = true
+    },
+    completion = {
+      callSnippet = "Replace"
+    },
+    doc = {
+      privateName = { "^_" }
+    },
+    hint = {
+      arrayIndex = "Disable",
+      enable = true,
+      paramName = "Disable",
+      paramType = true,
+      semicolon = "Disable",
+      setType = false
+    },
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua", "/home/muhammed-emin-eser/dotfiles/nvim/nvim/lua", "/home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua" }
+    }
+  }
+}
+[14:48:07.544][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[14:48:07.544][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[14:48:07.544][info] [#0:script/provider/provider.lua:66]: nil
+[14:48:07.705][info] [#0:script/library.lua:216]: Init builtin library at:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.713][info] [#0:script/library.lua:216]: Init builtin library at:	nil
+[14:48:07.820][info] [#0:script/workspace/workspace.lua:330]: Preload start:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.825][info] [#0:script/workspace/workspace.lua:336]: Scan files at:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:07.825][info] [#0:script/workspace/workspace.lua:330]: Preload start:	<fallback>
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[14:48:07.827][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[14:48:07.828][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:07.829][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[14:48:07.829][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[14:48:07.836][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:07.837][info] [#0:script/workspace/workspace.lua:359]: Scan library at:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[14:48:08.027][info] [#0:script/workspace/workspace.lua:385]: Found 11 files at:	<fallback>
+[14:48:08.027][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[14:48:08.027][info] [#0:script/workspace/workspace.lua:385]: Found 186 files at:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:08.027][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:08.028][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua
+[14:48:08.028][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.028][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.387 KB
+[14:48:08.030][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[14:48:08.030][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 16.126 KB
+[14:48:08.038][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[14:48:08.038][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[14:48:08.041][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[14:48:08.041][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/swenv.lua , size = 0.574 KB
+[14:48:08.041][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.041][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.662 KB
+[14:48:08.043][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[14:48:08.043][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/refactor.lua , size = 0.111 KB
+[14:48:08.043][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.043][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 17.330 KB
+[14:48:08.048][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[14:48:08.048][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/extend-bufferline.lua , size = 0.541 KB
+[14:48:08.048][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.048][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[14:48:08.050][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[14:48:08.050][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/rip-substitute.lua , size = 0.211 KB
+[14:48:08.050][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.050][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[14:48:08.052][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[14:48:08.052][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/breakpoints.lua , size = 0.550 KB
+[14:48:08.052][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.052][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.595 KB
+[14:48:08.055][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[14:48:08.055][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/snacks.lua , size = 0.197 KB
+[14:48:08.056][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.056][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 5.020 KB
+[14:48:08.059][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[14:48:08.059][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/cmp.lua , size = 1.968 KB
+[14:48:08.059][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.059][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[14:48:08.061][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[14:48:08.061][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/excali.lua , size = 0.056 KB
+[14:48:08.061][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.061][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.389 KB
+[14:48:08.063][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[14:48:08.063][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/todo.lua , size = 1.066 KB
+[14:48:08.064][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.064][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[14:48:08.064][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[14:48:08.064][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/diff_buffer.lua , size = 3.210 KB
+[14:48:08.065][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.065][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/mermaid.lua , size = 0.240 KB
+[14:48:08.065][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.065][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/noice.lua , size = 0.120 KB
+[14:48:08.066][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.066][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/persistence.lua , size = 0.464 KB
+[14:48:08.066][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.066][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/example.lua , size = 5.171 KB
+[14:48:08.067][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.067][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/blink.lua , size = 0.410 KB
+[14:48:08.067][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.067][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/flash.lua , size = 0.301 KB
+[14:48:08.067][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.067][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/distant.lua , size = 0.118 KB
+[14:48:08.067][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.068][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/gitignore.lua , size = 0.486 KB
+[14:48:08.068][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.068][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/jupynium.lua , size = 0.272 KB
+[14:48:08.068][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.068][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/lazy.lua , size = 1.881 KB
+[14:48:08.068][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.068][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/extend-mini-files.lua , size = 0.786 KB
+[14:48:08.069][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.069][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/options.lua , size = 4.504 KB
+[14:48:08.070][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.070][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/ai_toggle.lua , size = 0.654 KB
+[14:48:08.071][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.071][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/keymaps.lua , size = 6.319 KB
+[14:48:08.073][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.073][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/disable.lua , size = 0.242 KB
+[14:48:08.073][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.073][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/config/spider.lua , size = 0.511 KB
+[14:48:08.073][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua
+[14:48:08.073][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.699 KB
+[14:48:08.074][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[14:48:08.074][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.541 KB
+[14:48:08.075][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[14:48:08.075][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua , size = 8.035 KB
+[14:48:08.077][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[14:48:08.077][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua , size = 5.020 KB
+[14:48:08.080][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[14:48:08.080][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.884 KB
+[14:48:08.081][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[14:48:08.081][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua , size = 18.057 KB
+[14:48:08.084][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[14:48:08.084][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.310 KB
+[14:48:08.087][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[14:48:08.087][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua , size = 0.797 KB
+[14:48:08.088][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[14:48:08.088][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua , size = 0.642 KB
+[14:48:08.088][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[14:48:08.088][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.243 KB
+[14:48:08.089][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[14:48:08.089][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/_vim9script.lua , size = 15.423 KB
+[14:48:08.097][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.097][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/coxpcall.lua , size = 3.672 KB
+[14:48:08.098][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.099][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/editorconfig.lua , size = 11.254 KB
+[14:48:08.102][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.102][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/bc.lua , size = 5.417 KB
+[14:48:08.104][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.104][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/bcsave.lua , size = 17.090 KB
+[14:48:08.110][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.110][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_arm.lua , size = 18.891 KB
+[14:48:08.116][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.116][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_arm64.lua , size = 29.971 KB
+[14:48:08.133][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.133][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_arm64be.lua , size = 0.604 KB
+[14:48:08.133][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.133][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mips.lua , size = 21.494 KB
+[14:48:08.142][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.142][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mips64.lua , size = 0.689 KB
+[14:48:08.142][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.142][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mips64el.lua , size = 0.700 KB
+[14:48:08.143][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.143][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mips64r6.lua , size = 0.700 KB
+[14:48:08.143][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.143][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mips64r6el.lua , size = 0.711 KB
+[14:48:08.144][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.144][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_mipsel.lua , size = 0.698 KB
+[14:48:08.145][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.145][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_ppc.lua , size = 19.825 KB
+[14:48:08.152][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.152][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_x64.lua , size = 0.695 KB
+[14:48:08.153][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.153][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dis_x86.lua , size = 33.033 KB
+[14:48:08.167][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.167][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/dump.lua , size = 20.269 KB
+[14:48:08.174][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.174][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/p.lua , size = 8.874 KB
+[14:48:08.177][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.177][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/v.lua , size = 5.731 KB
+[14:48:08.178][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.178][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/vmdef.lua , size = 7.920 KB
+[14:48:08.180][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.180][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/jit/zone.lua , size = 0.979 KB
+[14:48:08.180][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.180][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/man.lua , size = 23.335 KB
+[14:48:08.187][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.188][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/tohtml.lua , size = 43.272 KB
+[14:48:08.204][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.204][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/F.lua , size = 1.076 KB
+[14:48:08.205][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.205][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_buf.lua , size = 0.764 KB
+[14:48:08.205][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.205][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_comment.lua , size = 8.967 KB
+[14:48:08.208][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.208][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.192] sec: <fallback>
+[14:48:08.208][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[14:48:08.208][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[14:48:08.208][info] [#0:script/workspace/workspace.lua:387]: Preload finish at:	<fallback>
+[14:48:08.213][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_defaults.lua , size = 32.274 KB
+[14:48:08.223][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.223][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_editor.lua , size = 44.635 KB
+[14:48:08.237][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.237][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_ftplugin/lua.lua , size = 0.540 KB
+[14:48:08.238][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.238][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_init_packages.lua , size = 3.023 KB
+[14:48:08.239][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.239][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_inspector.lua , size = 7.775 KB
+[14:48:08.243][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.243][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/api.lua , size = 106.186 KB
+[14:48:08.268][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.268][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/api_keysets.lua , size = 9.958 KB
+[14:48:08.276][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.276][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/api_keysets_extra.lua , size = 6.957 KB
+[14:48:08.280][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.280][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/base64.lua , size = 0.307 KB
+[14:48:08.281][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.281][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/builtin.lua , size = 10.381 KB
+[14:48:08.283][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.283][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/builtin_types.lua , size = 8.304 KB
+[14:48:08.287][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.288][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/diff.lua , size = 2.493 KB
+[14:48:08.289][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.289][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/json.lua , size = 1.537 KB
+[14:48:08.290][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.290][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/lpeg.lua , size = 15.348 KB
+[14:48:08.308][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.308][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/misc.lua , size = 0.291 KB
+[14:48:08.308][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.308][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/mpack.lua , size = 0.478 KB
+[14:48:08.309][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.309][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/re.lua , size = 2.217 KB
+[14:48:08.309][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.309][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/regex.lua , size = 1.580 KB
+[14:48:08.310][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.310][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/spell.lua , size = 0.929 KB
+[14:48:08.310][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.310][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/options.lua , size = 324.442 KB
+[14:48:08.381][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.381][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/vimfn.lua , size = 408.424 KB
+[14:48:08.484][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.484][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/vvars.lua , size = 26.214 KB
+[14:48:08.491][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.491][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta/vvars_extra.lua , size = 4.056 KB
+[14:48:08.493][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.493][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_meta.lua , size = 1.002 KB
+[14:48:08.494][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.494][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_options.lua , size = 25.508 KB
+[14:48:08.502][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.502][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_system.lua , size = 9.805 KB
+[14:48:08.507][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.507][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/_watch.lua , size = 9.718 KB
+[14:48:08.512][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.512][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/deprecated/health.lua , size = 1.260 KB
+[14:48:08.513][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.513][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/diagnostic.lua , size = 85.015 KB
+[14:48:08.560][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.560][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/filetype/detect.lua , size = 61.322 KB
+[14:48:08.577][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.577][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/filetype/options.lua , size = 2.559 KB
+[14:48:08.579][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.579][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/filetype.lua , size = 78.884 KB
+[14:48:08.596][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.596][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/fs.lua , size = 23.769 KB
+[14:48:08.603][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.603][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/func/_memoize.lua , size = 1.979 KB
+[14:48:08.604][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.604][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/func.lua , size = 1.950 KB
+[14:48:08.604][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.605][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/glob.lua , size = 3.312 KB
+[14:48:08.606][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.606][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/health/health.lua , size = 12.863 KB
+[14:48:08.610][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.610][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/health.lua , size = 15.680 KB
+[14:48:08.615][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.615][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/hl.lua , size = 6.054 KB
+[14:48:08.617][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.617][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/iter.lua , size = 25.875 KB
+[14:48:08.626][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.626][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/inspect.lua , size = 8.899 KB
+[14:48:08.629][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.629][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/keymap.lua , size = 3.683 KB
+[14:48:08.630][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.630][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/loader.lua , size = 14.564 KB
+[14:48:08.636][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.636][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_changetracking.lua , size = 11.493 KB
+[14:48:08.639][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.639][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_folding_range.lua , size = 11.103 KB
+[14:48:08.643][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.643][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_meta/protocol.lua , size = 188.964 KB
+[14:48:08.678][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.678][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_meta.lua , size = 0.585 KB
+[14:48:08.679][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.679][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_snippet_grammar.lua , size = 6.228 KB
+[14:48:08.682][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.682][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_tagfunc.lua , size = 3.236 KB
+[14:48:08.683][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.683][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_transport.lua , size = 5.152 KB
+[14:48:08.685][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.685][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/_watchfiles.lua , size = 6.813 KB
+[14:48:08.687][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.688][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/buf.lua , size = 42.998 KB
+[14:48:08.700][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.700][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/client.lua , size = 40.645 KB
+[14:48:08.711][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.711][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/codelens.lua , size = 9.245 KB
+[14:48:08.715][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.715][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/completion.lua , size = 27.140 KB
+[14:48:08.722][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.722][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/diagnostic.lua , size = 11.849 KB
+[14:48:08.726][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.726][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/handlers.lua , size = 24.316 KB
+[14:48:08.735][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.735][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/health.lua , size = 7.367 KB
+[14:48:08.737][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.737][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/inlay_hint.lua , size = 11.941 KB
+[14:48:08.741][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.741][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/log.lua , size = 5.593 KB
+[14:48:08.743][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.743][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/protocol.lua , size = 44.826 KB
+[14:48:08.749][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.749][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/rpc.lua , size = 22.153 KB
+[14:48:08.756][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.756][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/semantic_tokens.lua , size = 27.239 KB
+[14:48:08.763][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.763][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/sync.lua , size = 15.728 KB
+[14:48:08.767][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.767][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp/util.lua , size = 74.574 KB
+[14:48:08.790][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.790][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/lsp.lua , size = 52.855 KB
+[14:48:08.806][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.806][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/provider/health.lua , size = 29.545 KB
+[14:48:08.814][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.814][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/provider/perl.lua , size = 1.998 KB
+[14:48:08.815][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.815][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/provider/python.lua , size = 4.210 KB
+[14:48:08.816][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.816][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/provider/ruby.lua , size = 1.563 KB
+[14:48:08.817][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.817][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/provider.lua , size = 0.197 KB
+[14:48:08.818][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.818][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/re.lua , size = 6.527 KB
+[14:48:08.821][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.821][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/secure.lua , size = 6.484 KB
+[14:48:08.825][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.825][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/shared.lua , size = 40.562 KB
+[14:48:08.842][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.842][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/termcap.lua , size = 2.952 KB
+[14:48:08.844][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.844][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/snippet.lua , size = 19.590 KB
+[14:48:08.852][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.852][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/text.lua , size = 4.512 KB
+[14:48:08.854][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.854][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_fold.lua , size = 14.803 KB
+[14:48:08.860][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.860][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_headings.lua , size = 3.902 KB
+[14:48:08.862][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.862][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_meta/misc.lua , size = 2.809 KB
+[14:48:08.864][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.864][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_meta/tsnode.lua , size = 5.839 KB
+[14:48:08.867][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.867][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_meta/tsquery.lua , size = 1.860 KB
+[14:48:08.868][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.868][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_meta/tstree.lua , size = 1.234 KB
+[14:48:08.869][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.869][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_query_linter.lua , size = 7.818 KB
+[14:48:08.873][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.873][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/_range.lua , size = 3.923 KB
+[14:48:08.875][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.876][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/dev.lua , size = 21.149 KB
+[14:48:08.885][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.885][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/health.lua , size = 1.551 KB
+[14:48:08.886][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.886][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua , size = 15.112 KB
+[14:48:08.893][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.893][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/language.lua , size = 5.382 KB
+[14:48:08.895][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.896][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/languagetree.lua , size = 40.223 KB
+[14:48:08.912][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.912][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter/query.lua , size = 37.908 KB
+[14:48:08.927][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.927][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/treesitter.lua , size = 15.239 KB
+[14:48:08.933][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.933][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/ui/clipboard/osc52.lua , size = 2.146 KB
+[14:48:08.934][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.934][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/ui.lua , size = 7.683 KB
+[14:48:08.937][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.938][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/uri.lua , size = 3.614 KB
+[14:48:08.940][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.940][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua/vim/version.lua , size = 13.701 KB
+[14:48:08.946][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///tmp/.mount_nvimpnKedM/usr/share/nvim/runtime/lua
+[14:48:08.946][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua , size = 1.984 KB
+[14:48:08.948][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[14:48:08.948][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/log.lua , size = 3.707 KB
+[14:48:08.951][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.951][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/utils.lua , size = 11.899 KB
+[14:48:08.958][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.958][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/health.lua , size = 2.232 KB
+[14:48:08.959][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.960][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/breakpoints.lua , size = 5.840 KB
+[14:48:08.963][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.963][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/ext/autocompl.lua , size = 1.888 KB
+[14:48:08.965][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.965][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/ext/vscode.lua , size = 6.588 KB
+[14:48:08.968][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.968][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/ui/widgets.lua , size = 20.333 KB
+[14:48:08.977][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.977][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/progress.lua , size = 0.965 KB
+[14:48:08.978][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.978][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/repl.lua , size = 18.065 KB
+[14:48:08.987][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.987][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/protocol.lua , size = 13.781 KB
+[14:48:08.997][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:08.997][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/ui.lua , size = 16.654 KB
+[14:48:09.005][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.005][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/_cmds.lua , size = 5.770 KB
+[14:48:09.008][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.008][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/entity.lua , size = 11.546 KB
+[14:48:09.013][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.013][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/async.lua , size = 0.462 KB
+[14:48:09.013][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.014][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/semanticTokens/full] takes [1.189]sec. {
+  _closeMessage = "Request cancelled.",
+  _closeReason = -32800,
+  id = 11,
+  jsonrpc = "2.0",
+  method = "textDocument/semanticTokens/full",
+  params = {
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.014][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/session.lua , size = 64.440 KB
+[14:48:09.046][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.103][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap/rpc.lua , size = 3.198 KB
+[14:48:09.105][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.105][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[14:48:09.105][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[14:48:09.106][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.364 KB
+[14:48:09.109][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[14:48:09.109][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua/dap.lua , size = 38.839 KB
+[14:48:09.125][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/lazy/nvim-dap/lua
+[14:48:09.125][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua , size = 0.348 KB
+[14:48:09.125][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[14:48:09.125][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua , size = 5.662 KB
+[14:48:09.127][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[14:48:09.127][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.529 KB
+[14:48:09.129][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[14:48:09.129][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.371 KB
+[14:48:09.131][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/muhammed-emin-eser/.local/share/nvim/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[14:48:09.131][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/init.lua , size = 6.505 KB
+[14:48:09.133][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [1.134] sec: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:09.133][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:09.133][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:09.133][info] [#0:script/workspace/workspace.lua:387]: Preload finish at:	file:///home/muhammed-emin-eser/dotfiles/nvim/nvim
+[14:48:09.180][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/muhammed-emin-eser/dotfiles/nvim/nvim], files count:[186]
+[14:48:09.181][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/didOpen] takes [1.389]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua",
+      version = 0
+    }
+  }
+}
+[14:48:09.182][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.359]sec. {
+  id = 6,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 27
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.182][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.359]sec. {
+  id = 8,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 27
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.182][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.358]sec. {
+  id = 10,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 27
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.182][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/inlayHint] takes [1.358]sec. {
+  id = 12,
+  jsonrpc = "2.0",
+  method = "textDocument/inlayHint",
+  params = {
+    range = {
+      end = {
+        character = 0,
+        line = 27
+      },
+      start = {
+        character = 0,
+        line = 0
+      }
+    },
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.191][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/documentSymbol] takes [1.389]sec. {
+  id = 4,
+  jsonrpc = "2.0",
+  method = "textDocument/documentSymbol",
+  params = {
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.193][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/foldingRange] takes [1.365]sec. {
+  id = 13,
+  jsonrpc = "2.0",
+  method = "textDocument/foldingRange",
+  params = {
+    textDocument = {
+      uri = "file:///home/muhammed-emin-eser/dotfiles/nvim/nvim/lua/plugins/dap.lua"
+    }
+  }
+}
+[14:48:09.269][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/muhammed-emin-eser/dotfiles/nvim/nvim] finished, takes [0.084] sec.
+[01:03:22.996][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.120 MB
+        # 00 : 179.778 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[14:58:07.678][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.519 MB
+        # 00 : 150.183 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     269
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      269
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[01:13:23.087][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.123 MB
+        # 00 : 179.782 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:08:08.755][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.532 MB
+        # 00 : 150.196 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     271
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      271
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[01:23:23.169][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.127 MB
+        # 00 : 179.785 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:18:09.831][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.561 MB
+        # 00 : 150.225 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[01:33:23.243][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.131 MB
+        # 00 : 179.789 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:28:09.907][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.564 MB
+        # 00 : 150.229 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[01:43:23.317][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.134 MB
+        # 00 : 179.792 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:38:09.977][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.568 MB
+        # 00 : 150.232 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[01:53:23.398][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.138 MB
+        # 00 : 179.796 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:48:10.055][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.572 MB
+        # 00 : 150.236 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:03:23.473][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.141 MB
+        # 00 : 179.800 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:58:11.132][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.575 MB
+        # 00 : 150.239 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:13:23.556][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.145 MB
+        # 00 : 179.803 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:08:11.209][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.579 MB
+        # 00 : 150.243 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:23:23.634][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.149 MB
+        # 00 : 179.807 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:18:11.283][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.583 MB
+        # 00 : 150.247 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     277
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      277
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:33:23.723][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.152 MB
+        # 00 : 179.810 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:28:12.358][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.706 MB
+        # 00 : 150.370 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     289
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      289
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:43:23.793][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.156 MB
+        # 00 : 179.814 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:38:12.438][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.718 MB
+        # 00 : 150.382 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     291
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      291
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[02:53:23.869][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.160 MB
+        # 00 : 179.818 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:48:12.520][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.755 MB
+        # 00 : 150.419 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     299
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      299
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:03:23.952][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.163 MB
+        # 00 : 179.821 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:58:12.592][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.802 MB
+        # 00 : 150.466 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:13:24.031][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.167 MB
+        # 00 : 179.825 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:08:12.675][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.806 MB
+        # 00 : 150.470 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:23:24.111][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.170 MB
+        # 00 : 179.829 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:18:12.748][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.809 MB
+        # 00 : 150.473 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:33:24.202][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.174 MB
+        # 00 : 179.832 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:28:12.826][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.813 MB
+        # 00 : 150.477 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:43:24.278][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.178 MB
+        # 00 : 179.836 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:38:12.927][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.817 MB
+        # 00 : 150.481 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:53:24.359][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.181 MB
+        # 00 : 179.839 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:48:12.990][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.820 MB
+        # 00 : 150.484 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:50:16.295][error][#0:script/pub/pub.lua:281]: Brave is dead!: ...kages/lua-language-server/libexec/script/brave/brave.lua:60: attempt to call a nil value (for iterator 'for iterator')
+stack traceback:
+	...kages/lua-language-server/libexec/script/brave/brave.lua:60: in field 'start'
+	...kages/lua-language-server/libexec/script/brave/brave.lua:33: in field 'register'
+	[string "package.path  = "/home/muhammed-emin-eser/.lo..."]:13: in main chunk
+	[C]: in ?
+stack traceback:
+	script/pub/pub.lua:281: in field 'checkDead'
+	script/pub/pub.lua:286: in field 'step'
+	script/service/service.lua:173: in upvalue 'doSomething'
+	script/service/service.lua:186: in local 'sleep'
+	script/service/service.lua:204: in field 'eventLoop'
+	script/service/service.lua:287: in field 'start'
+	...nvim/mason/packages/lua-language-server/libexec/main.lua:85: in main chunk
+	(main.lua):85: in main chunk
+	(bootstrap.lua):17: in main chunk
+	[C]: in ?
+[17:50:16.297][error][#0:script/pub/pub.lua:281]: Brave is dead!: ...kages/lua-language-server/libexec/script/brave/brave.lua:60: attempt to call a nil value (for iterator 'for iterator')
+stack traceback:
+	...kages/lua-language-server/libexec/script/brave/brave.lua:60: in field 'start'
+	...kages/lua-language-server/libexec/script/brave/brave.lua:33: in field 'register'
+	[string "package.path  = "/home/muhammed-emin-eser/.lo..."]:13: in main chunk
+	[C]: in ?
+stack traceback:
+	script/pub/pub.lua:281: in field 'checkDead'
+	script/pub/pub.lua:286: in field 'step'
+	script/service/service.lua:173: in upvalue 'doSomething'
+	script/service/service.lua:186: in local 'sleep'
+	script/service/service.lua:204: in field 'eventLoop'
+	script/service/service.lua:287: in field 'start'
+	...nvim/mason/packages/lua-language-server/libexec/main.lua:85: in main chunk
+	(main.lua):85: in main chunk
+	(bootstrap.lua):17: in main chunk
+	[C]: in ?
+[04:03:24.402][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.185 MB
+        # 00 : 179.843 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[17:58:13.331][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.835 MB
+        # 00 : 150.499 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[04:13:24.468][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.188 MB
+        # 00 : 179.847 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:08:13.404][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.838 MB
+        # 00 : 150.502 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[04:23:24.548][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.192 MB
+        # 00 : 179.850 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:18:13.479][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.842 MB
+        # 00 : 150.506 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[04:33:24.615][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.196 MB
+        # 00 : 179.854 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:28:13.547][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.846 MB
+        # 00 : 150.510 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[04:43:24.693][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.199 MB
+        # 00 : 179.857 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:38:13.624][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.849 MB
+        # 00 : 150.513 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[04:53:24.775][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.203 MB
+        # 00 : 179.861 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:48:13.698][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.853 MB
+        # 00 : 150.517 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:03:25.139][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.206 MB
+        # 00 : 179.865 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:58:13.767][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.856 MB
+        # 00 : 150.520 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:13:25.209][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.210 MB
+        # 00 : 179.868 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[19:08:13.861][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.860 MB
+        # 00 : 150.524 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:23:25.294][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.214 MB
+        # 00 : 179.872 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[19:18:13.923][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 150.864 MB
+        # 00 : 150.528 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.106 MB
+        # 04 : 0.106 MB
+    --------------- Coroutine ---------------
+        Total:     313
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      313
+    --------------- Cache ---------------
+        Total: 6
+        Dead:  5
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:33:25.369][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.217 MB
+        # 00 : 179.875 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[19:27:00.165][warn] [#0:script/pub/report.lua:24]: Load proto error:	Disconnected!
+[05:43:26.430][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.221 MB
+        # 00 : 179.879 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[05:53:26.536][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.224 MB
+        # 00 : 179.883 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:03:26.594][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.228 MB
+        # 00 : 179.886 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:13:26.687][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.232 MB
+        # 00 : 179.890 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:23:27.373][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.235 MB
+        # 00 : 179.893 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:33:27.460][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.239 MB
+        # 00 : 179.897 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:43:28.556][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.242 MB
+        # 00 : 179.901 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[06:53:28.648][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.246 MB
+        # 00 : 179.904 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[07:03:28.745][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.250 MB
+        # 00 : 179.908 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[07:13:29.406][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.253 MB
+        # 00 : 179.911 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[07:23:28.924][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 180.257 MB
+        # 00 : 179.915 MB
+        # 01 : 0.062 MB
+        # 02 : 0.062 MB
+        # 03 : 0.108 MB
+        # 04 : 0.109 MB
+    --------------- Coroutine ---------------
+        Total:     3
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      3
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[07:29:13.567][warn] [#0:script/pub/report.lua:24]: Load proto error:	Disconnected!

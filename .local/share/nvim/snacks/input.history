@@ -1,0 +1,74 @@
++POS_WEIGHTS*spider.lua,clientfriend��vim.keymap.set("n", "<leader>da", function()
+  local dap = require("dap")
+  
+  -- Wir nutzen dressing.nvim für ein großes, stabiles Eingabefenster
+  vim.ui.input({ 
+    prompt = "Arguments: ",
+    -- Das zwingt dressing.nvim (falls installiert), ein breites Fenster zu öffnen
+    kind = "center_win" 
+  }, function(input)
+    if input and input ~= "" then
+      -- Verhindert, dass Whitespaces am Ende Fehler verursachen
+      input = vim.trim(input)
+      
+      -- WICHTIG: Zerlegt den Riesen-String sauber in einzelne Argumente
+      local args = {}
+      for arg in string.gmatch(input, "%S+") do
+        table.insert(args, arg)
+      end
+      
+      -- Holt die Konfiguration für die aktuelle Sprache
+      local config = dap.configurations[vim.bo.filetype]
+      if config and config[1] then
+        local run_config = vim.tbl_deep_extend("force", {}, config[1])
+        run_config.args = args
+        
+        -- Startet den Debugger mit der sauberen Liste
+        dap.run(run_config)
+      else
+        vim.notify("Keine Debug-Konfiguration gefunden!", vim.log.levels.WARN)
+      end
+    end
+  end)
+end, { desc = "Run with Args (Fix Cutoff)" })�---video '/home/muhammed-emin-eser/desk/din/quran/maher_workaround/Quran_cropped/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي [Ee7-usy6L4k].text_only.mp4' --text '/home/muhammed-emin-eser/desk/din/qura
+n/eng_translation/chunked_translation/83_Al-Mutaffifin.txt' --surah '83' --audio '/home/muhammed-emin-eser/desk/din/quran/maher_playlist/maher_playlist/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي.flac'��vim.keymap.set("n", "<leader>da", function()
+  local dap = require("dap")
+  
+  vim.ui.input({ 
+    prompt = "Args (Leer lassen für Clipboard): ",
+    kind = "center_win" 
+  }, function(input)
+    -- 1. Wenn nichts eingetippt wurde, nimm direkt das System-Clipboard
+    if not input or input == "" then
+      input = vim.fn.getreg("+")
+    end
+
+    if input and input ~= "" then
+      -- 2. Radikale Bereinigung: Ersetze alle Newlines, Tabs und Wagenrückläufe durch normale Leerzeichen
+      input = input:gsub("[\r\n\t]", " ")
+      input = vim.trim(input)
+      
+      -- 3. Argumente sauber parsen (erlaubt auch Argumente in Anführungszeichen, z.B. --name "Mein Text")
+      local args = {}
+      -- Dieser Regex fängt sowohl normale Wörter als auch Strings in "..." sauber ab
+      for match in string.gmatch(input, '[^%s"]+|"([^"]*)"') do
+        -- Entferne die Anführungszeichen für den Debugger, falls vorhanden
+        local clean_arg = match:gsub('^"', ''):gsub('"$', '')
+        table.insert(args, clean_arg)
+      end
+      
+      -- 4. Debugger starten
+      local config = dap.configurations[vim.bo.filetype]
+      if config and config[1] then
+        local run_config = vim.tbl_deep_extend("force", {}, config[1])
+        run_config.args = args
+        
+        dap.run(run_config)
+      else
+        vim.notify("Keine Debug-Konfiguration gefunden!", vim.log.levels.WARN)
+      end
+    end
+  end)
+end, {�---video '/home/muhammed-emin-eser/desk/din/quran/maher_workaround/Quran_cropped/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي [Ee7-usy6L4k].text_only.mp4' --text '/home/muhammed-emin-eser/desk/din/qura
+n/eng_translation/chunked_translation/83_Al-Mutaffifin.txt' --surah '83' --audio '/home/muhammed-emin-eser/desk/din/quran/maher_playlist/maher_playlist/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي.flac'�3❯ --video '/home/muhammed-emin-eser/desk/din/quran/maher_workaround/Quran_cropped/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي [Ee7-usy6L4k].text_only.mp4' --text '/home/muhammed-emin-eser/desk/din/qura
+  n/eng_translation/chunked_translation/83_Al-Mutaffifin.txt' --surah '83' --audio '/home/muhammed-emin-eser/desk/din/quran/maher_playlist/maher_playlist/سورة المطففين (83) بصوت القارئ الشيخ ماهر المعيقلي.flac';find_balanced_semantic_span2find_semantic_span+run_mapping)text_file'mapping%video&output/mapping_process0translation_file-cropped_video&result)run_llama8start_server_and_promptq)run_llama&prompt+call_openai%verse&output0semantic_indexes3annotate_highlights*highlights
