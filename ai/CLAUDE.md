@@ -1,6 +1,7 @@
 # Global Agent Rules
 
-- After every completed user task, run `python3 /home/muhammed-emin-eser/utils/peep.py`.
+- After every completed user task, run `python3 "$HOME/utils/peep.py"`.
+- **KRITISCH: NUR `$HOME` verwenden.** Niemals den Benutzernamen tippen oder Pfade hartkodieren (weder `muhammed-emin-eser` noch `muhammed-em-in-eser`). Immer `$HOME/...` verwenden. Pfade, die nicht über `$HOME` erreichbar sind, sind VERBOTEN.
 - If this command fails due to sandbox permissions, rerun it outside the sandbox (escalated).
 
 ## Instructions

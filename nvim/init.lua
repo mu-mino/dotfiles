@@ -198,3 +198,19 @@ vim.keymap.set(
   { desc = "Jupynium: Server starten und verbinden" }
 )
 vim.keymap.set("n", "<space>jsd", "<cmd>JupyniumStopSync<CR>", { desc = "Jupynium: Stop synchronization" })
+
+-- Auto-delete nested terminal buffers (term:// inside term://) that appear when
+-- running `nvim -c 'terminal'` from within a fish shell in a terminal buffer.
+vim.api.nvim_create_autocmd("BufAdd", {
+  pattern = "term://*",
+  callback = function()
+    local name = vim.api.nvim_buf_get_name(0)
+    if name:find('fish -c "nvim -c \'terminal\'"', 1, true) then
+      vim.schedule(function()
+        if vim.api.nvim_buf_is_valid(0) then
+          vim.api.nvim_buf_delete(0, { force = true })
+        end
+      end)
+    end
+  end,
+})

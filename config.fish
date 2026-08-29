@@ -55,7 +55,13 @@ alias ....='cd ../../..'
 # ============================================================
 # LS
 # ============================================================
-alias l='ls -CF --color=auto'
+function l
+    ls -CF --color=always | string split -n " " | while read -l word
+        if not string match -q "*@*" $word
+            echo $word
+        end
+    end
+end
 alias la='ls -A --color=auto'
 alias ll='ls -alFh --color=auto'
 alias lsa='ls -A'
@@ -102,9 +108,8 @@ alias mark='/home/muhammed-emin-eser/.local/bin/marktext-x86_64.AppImage --disab
 # ============================================================
 # GREP / RIPGREP
 # ============================================================
-alias g='grep --color=auto'
+alias g='grep -n --color=auto --exclude-dir "\.*"'
 alias gi='grep -i --color=auto'
-alias gn='grep -n --color=auto'
 alias rg='rg --smart-case'
 alias se='sed -E'
 alias a='awk'
@@ -208,7 +213,7 @@ alias dpull='docker pull'
 alias tm='tmux'
 alias sqlb='sqlitebrowser'
 alias pids='ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -n 20'
-alias pypids="ps -u \$USER -o pid,pcpu,args --sort=-%cpu | grep -E 'python[0-9.]* ' | grep -v 'vscode' | column -t"
+alias pypids="ps -u \$USER -o pid,pcpu,args --sort=-%cpu | grep -E 'python[0-9.]* ' | grep -v vscode | column -t"
 
 function dbuild
     docker build -t $argv[1] .
@@ -235,7 +240,7 @@ end
 
 function ddel
     if test -z $argv[1]
-        echo "Benutzung: ddel <image_tag_oder_id>"
+        echo "Benutzung: ddel <image_tag_oder_id >"
         return 1
     end
     docker ps -a | grep $argv[1] | awk '{print $1}' | xargs -r docker rm -f
@@ -301,13 +306,13 @@ function dcmloop
     set container_id $argv[1]
     set image_name $argv[2]
     if test -z $container_id -o -z $image_name
-        echo "Nutzung: dcmloop <container> <image>"
+        echo "Nutzung: dcmloop <container > < image >"
         return 1
     end
-    echo "Starte Autocommit für '$container_id' -> '$image_name' (Intervall: 5 Min)."
+    echo "Starte Autocommit für '$container_id' - >'$image_name' (Intervall: 5 Min)."
     while true
         if not docker ps --format '{{.Names}} {{.ID}}' | grep -q $container_id
-            echo (date +'%H:%M:%S')" - ⚠️  Container '$container_id' nicht gefunden."
+            echo (date +'%H:%M:%S')" - ⚠️ Container '$container_id' nicht gefunden."
         else
             if docker commit $container_id $image_name >/dev/null
                 echo (date +'%H:%M:%S')" - ✅ Backup-Commit erfolgreich."
@@ -323,7 +328,7 @@ function dcmloopseq
     set container_id $argv[1]
     set base_image_name $argv[2]
     if test -z $container_id -o -z $base_image_name
-        echo "Nutzung: dcmloopseq <container> <image>"
+        echo "Nutzung: dcmloopseq <container > < image >"
         return 1
     end
     set i (docker images --format '{{.Tag}}' $base_image_name | grep -E '^[0-9]+$' | sort -nr | head -n1)
@@ -335,7 +340,7 @@ function dcmloopseq
         set i (math $i + 1)
         set current_tag "$base_image_name:$i"
         if not docker ps --format '{{.ID}}' | grep -q (docker inspect -f '{{.Id}}' $container_id 2>/dev/null)
-            echo (date +'%H:%M:%S')" - ⚠️  Container nicht aktiv."
+            echo (date +'%H:%M:%S')" - ⚠️ Container nicht aktiv."
             set i (math $i - 1)
         else
             if docker commit $container_id $current_tag >/dev/null
@@ -385,7 +390,9 @@ function runClassifyApi
     end
 end
 alias cckill="ps aux | g cchv-server | awk '{ print \$1 }' | head -n 1 | xa kill -9"
-alias cc="cchv-server --serve --no-auth & sleep 2; echo 'PID: \$!';"
+alias cc="cchv-server --serve --no-auth & sleep 2
+        echo 'PID: \$!'
+        "
 alias kp="ps aux | g peep.py | awk '{ print \$2 }' | xa kill -9"
 alias qq='/home/muhammed-emin-eser/utils/run-qq-server.sh'
 
@@ -459,7 +466,7 @@ end
 
 function s
     if test (count $argv) -lt 2
-        echo "Usage: s <datei> <flags> <sed-befehl>"
+        echo "Usage: s <datei > < flags > < sed-befehl >"
         return 1
     end
     set datei $argv[1]
@@ -487,7 +494,7 @@ function piploop
         set output (python $script 2>&1)
         set exit_code $status
         if string match -q "*ModuleNotFoundError: No module named*" $output
-            set pkg (string match -r "No module named '([^']+)'" $output)[2]
+            set pkg (string match -r "No module named ) '" $output)[2]
             echo "⚠️  Installiere: $pkg"
             uv pip install $pkg -q
             continue
@@ -644,5 +651,18 @@ end
 # Kurzer Alias, um die Funktion blitzschnell aufzurufen
 alias jkv="jupyter-register-venv"
 
-# opencode
-fish_add_path /home/muhammed-emin-eser/.opencode/bin
+alias gdog='git dog'
+alias bat='batcat'
+alias lg='lazygit'
+function corr
+    cp "/home/muhammed-emin-eser/desk/din/bin_baz/samples/raw/v1_f$argv[1].json" "/home/muhammed-emin-eser/desk/din/bin_baz/samples/corrected/v1_f$argv[1].json"
+    cd /home/muhammed-emin-eser/desk/din/bin_baz
+    venva
+    py pdf/scripts/volume_pdf.py --json "/home/muhammed-emin-eser/desk/din/bin_baz/samples/raw/v1_f$argv[1].json"
+    nv "/home/muhammed-emin-eser/desk/din/bin_baz/samples/corrected/v1_f$argv[1].json"
+    o "/home/muhammed-emin-eser/desk/din/bin_baz/pdf/output/v1_f$argv[1].pdf"
+end
+function rmcorr
+    rm -f "/home/muhammed-emin-eser/desk/din/bin_baz/samples/raw/v1_f$argv[1].json" "/home/muhammed-emin-eser/desk/din/bin_baz/samples/corrected/v1_f$argv[1].json"
+end
+set -gx PEXELS_API_KEY mzLROvkOGW55H3qs0KlHclBqON5Yq7PkWFB2XNQR5PH1d9OjDv72hRLf

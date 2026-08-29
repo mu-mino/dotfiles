@@ -2,3 +2,9 @@
 config/
 **/.venv/**
 **/__pycache__/**
+**/mason/packages/**
+**/mason/bin/**
+**/mason/share/**
+**/scratch/**
+**/snacks/**
+**/nvim_checkpoints/**
